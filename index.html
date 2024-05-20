@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+    <html lang="pt_BR">
+<head>
+    <script 
+        src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link 
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css" 
+        rel="stylesheet">
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com">
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet" />
+    <link 
+        href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+        rel='stylesheet'>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link 
+        rel="stylesheet" 
+        href="./style.css">    
+    <link 
+        rel="shortcut icon" 
+        type="image/ico" 
+        href="./assets/Favicon.ico"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ANFER Esquadrias Metálicas">
+    <meta property="og:image" content="https://anfer-website.vercel.app/assets/Portadeaco.jpeg">
+    <meta property="og:description" content="A melhor serralheria da zona leste">
+    <meta property="og:site_name" content="ANFER">
+
+    <title>Charme & Bela</title>
+
+</head>
+<body>
+    <div class="bg-home" id="home">
+        <header> 
+                <nav class="navigation">
+                        <div class="logo" data-aos="fade-up ">
+                            <img data-aos="flip-up"
+                            data-aos-delay="300"
+                            data-aos-duration="1500"
+                            src="./assets/logo.svg" width="55px" height="55px" alt="logo da Barbearia" />
+                        </div>  
+                    <span class="nome-logo">Charme & Bela</span>
+                    <ul class="nav-menu" id="myNavMenu" >
+                      <li class="nav-item" onclick="closeMenu()"><a href="#home">Início</a></li>
+                      <li class="nav-item" onclick="closeMenu()"><a href="#about">Sobre</a></li>  
+                      <li class="nav-item" onclick="closeMenu()"><a href="#care">Tratamentos</a></li>  
+                      <li class="nav-item" onclick="closeMenu()"><a href="#contact">Contato</a></li>  
+                     </ul>
+                     <div>
+                        
+                        <a class="header-button" 
+                        href="https://api.whatsapp.com/send?phone=5511913129669" target="_blank" 
+                        data-aos="fade-up" data-aos-delay="300"> <img 
+                        src="./assets/Icons/whatsapp-logo-48 1.svg" alt="WhatssApp" target="_blank">
+                        Fale conosco
+                            </a>
+                    </div>
+                    <div class="menu" id="menuButton" onclick="myMenuFunction()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                     </div>
+                </nav>
+            <main class="hero container">
+                <h1>A BELEZA COMEÇA  <br>COM O CUIDADO!</h1>
+                <p>Agende sua consulta gratuita e descubra  o que podemos <br> fazer por você! </p>
+                <a href="https://api.whatsapp.com/send?phone=5511913129669&text=%20Quero%20fazer%20uma%20avaliação!" 
+                class="button-contact" 
+                target="_blank">
+                Agende uma avaliação gratuita!
+                </a>
+            </main>
+        </header>
+    </div>
+
+
+
+<section class="about" id="about">
+        <div class="container about-content">
+            <div class="about-description" data-aos="zoom-out-left"
+            data-aos-delay="250">
+                <h2>Sobre a Charme & Bela</h2>
+                <p>Conheça a Clínica Charme & Bela, onde oferecemos tratamentos personalizados e avançados, utilizamos tecnologia de ponta para realçar sua beleza e bem-estar.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+<div class="wrapper"> 
+    <section class="servicos">
+        <div class="servico" data-aos="fade-up" data-aos-delay="150">
+            <img 
+            src="./assets/Imagens/massagem.svg" 
+            alt="Massagens">
+        <div class="servico-info">
+            <h3>Massagens</h3>
+            <p>Descubra o alívio e o bem-estar com nossas massagens terapeuticas. Relaxe e renove-se em um ambiente acolhedor, cuidando do corpo e do bem-estar. Agende sua sessão e sinta a diferença.
+            </p>
+            <div class="butao">
+            <button>Agende uma avaliação</button>
+            </div>
+        </div>
+        </div>
+        <div class="servico"data-aos="fade-up" data-aos-delay="250">
+            <img 
+            src="./assets/Imagens/reducaoMedidas.svg" 
+            alt="Redução de Medidas">
+        <div class="servico-info">
+            <h3>Redução de Medidas</h3>
+            <p>Reduza medidas e alcance sua melhor versão  Utilizando técnicas avançadas e seguras, ajudamos você a conquistar resultados visíveis e duradouros. Agende sua sessão e sinta-se mais confiante e saudável.</p>
+            <div class="butao">
+                <button>Agende uma avaliação</button>
+                </div>        
+            </div>
+        </div>
+        <div class="servico" data-aos="fade-up" data-aos-delay="350">
+            <img 
+            src="./assets/Imagens/facial.svg" 
+            alt="Tratamentos Faciais">
+        <div class="servico-info">
+            <h3>Tratamentos Faciais</h3>
+            <p>Revitalize sua pele. Utilizamos técnicas avançadas e produtos de alta qualidade, proporcionamos uma limpeza profunda e rejuvenescimento visível. Agende sua sessão e descubra uma pele mais luminosa e saudável.
+            </p>
+            <div class="butao">
+                <button>Agende uma avaliação</button>
+            </div>
+        </div>
+        </div>
+        <div class="servico" data-aos="fade-up" data-aos-delay="350">
+            <img 
+            src="./assets/Imagens/levantamentoBumbum.svg" 
+            alt="Levantamento de Bumbum">
+        <div class="servico-info">
+            <h3>Levantamento de Bumbum</h3>
+            <p>Explore nosso tratamento de Levantamento de Bumbum na clínica, com o uso de equipamentos como o pump up seguido por massagem modeladora. Obtenha um bumbum mais firme e tonificado em poucas sessões. 
+            </p>
+            <div class="butao">
+                <button>Agende uma avaliação</button>
+            </div>        
+        </div>
+        </div>
+        <div class="servico" data-aos="fade-up" data-aos-delay="350">
+            <img 
+            src="./assets/Imagens/injetaveis.svg" 
+            alt="Tratamentos injetáveis">
+        <div class="servico-info">
+            <h3>Tratamentos injetáveis</h3>
+            <p>Descubra os benefícios dos nossos tratamentos injetáveis faciais e corporais na clínica. Com procedimentos seguros e eficazes, ajudamos a rejuvenescer a pele e a modelar o corpo de forma natural e duradoura. 
+            </p>
+            <div class="butao">
+                <button>Agende uma avaliação</button>
+            </div>        
+        </div>
+        </div>
+        <div class="servico" data-aos="fade-up" data-aos-delay="350">
+            <img 
+            src="./assets/Imagens/depilacao.svg" 
+            alt="Depilações">
+        <div class="servico-info">
+            <h3>Depilações</h3>
+            <p>Descubra nossa depilação a cera e a laser na clínica. Oferecemos métodos eficazes para uma pele suave e livre de pelos. Marque sua sessão e sinta-se confiante todos os dias!</p>
+            <div class="butao">
+                <button>Agende uma avaliação</button>
+            </div>
+        </div>
+        </div>
+    </section>
+</div>
+
+<section id="care">
+    <div class="about-care">
+        <h2>Nossos Tratamentos</h2>
+        <p>
+            Confira os nossos tratamentos: 
+        </p>
+    </div>
+<div class="care-wrapper">
+    <div class="care-container">
+        <div class="care-content">
+            <ul>
+                <li>Criolipólise</li>
+                <li>Carboxiterapia</li>
+                <li>Hidrolipoclasia</li>
+                <li>Radiofrequência</li>
+                <li>Corrente-russa</li>
+                <li>Lipo-Enzimático</li>
+                <li>Pós operatório</li>
+                <li>Drenagem</li>
+                <li>Depilação</li>
+            </ul>
+        </div>
+        <div class="care-content">
+            <ul>
+                <li>Mascara de led </li>
+                <li>Limpeza de pele </li>
+                <li>Peeling de diamante</li>
+                <li>Massagem modeladora</li>
+                <li>Massagem relaxante</li>
+                <li>Massagem com Ventosas</li>
+                <li>Pump up</li>
+                <li>Enzimas</li>
+                <li>e muito mais...</li>            
+            </ul>
+        </div>
+        <div class="care-content">
+            <ul>
+                <li>Mascara de led </li>
+                <li>Limpeza de pele </li>
+                <li>Peeling de diamante</li>
+                <li>Massagem modeladora</li>
+                <li>Massagem relaxante</li>
+                <li>Massagem com Ventosas</li>
+                <li>Pump up</li>
+                <li>Enzimas</li>
+                <li>e muito mais...</li>            
+            </ul>
+        </div>
+    </div>
+</div>  
+</section>
+<section>
+<div class="call-to-action">
+ <div class="new-hero">
+    <h2>PRECISANDO DE UMA <br> MASSAGEM RELAXANTE?</h2>
+    <p>Agende agora e sinta o alívio do estresse em um ambiente acolhedor. <br> Cuide-se e renove suas energias!
+    </p>
+    <a href="https://api.whatsapp.com/send?phone=5511913129669&text=%20Quero%20fazer%20uma%20avaliação!" 
+                class="button-hero" 
+                target="_blank">
+                Agende seu horário!</a>
+ </div>
+</div>
+</section>
+<section class="galery">
+    <h2>Galeria</h2>
+
+    <div class="galery-container">
+        <img src="./assets/grid/1.jpeg" alt="">
+        <img src="./assets/grid/2.jpeg" alt="">
+        <img src="./assets/grid/3.jpeg" alt="">
+        <img src="./assets/grid/4.jpeg" alt="">
+        <img src="./assets/grid/5.jpeg" alt="">
+        <img src="./assets/grid/6.jpeg" alt="">
+        <img src="./assets/grid/7.jpeg" alt="">
+        <img src="./assets/grid/8.jpeg" alt="">
+        <img src="./assets/grid/9.jpeg" alt="">
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+<div class="contact-container">
+    <div class="contact-content">
+        <h2>Contato!</h2>
+        <div class="item">
+            <a href="https://www.google.com/maps/place/ANFER+ESQUADRIAS+METALICAS/@-23.4867609,-46.4569006,19.86z/data=!4m6!3m5!1s0x94ce619fe14a2ab1:0x2c692349ce969a10!8m2!3d-23.4864845!4d-46.4566919!16s%2Fg%2F12qf9zbsc?entry=ttu" target="_blank"><img src="./assets/Icons/map-solid-24 1.svg" alt="Localization"></a>
+            <p>Av. Paranaguá, 1672 - Sala 02 <br>
+                Ermelino Matarazzo, São Paulo -SP</p>
+        </div>
+            <div class="item">
+                <a href="https://api.whatsapp.com/send?phone=5511940093757" target="_blank"><img src="./assets/Icons/whatsapp-logo-48 1.svg" alt="WhatssApp"></a>
+                <p>(11) 91312-9669</p>
+            </div>
+
+            <div class="item">
+                <a href="mailto: oficial.anferesquadrias@gmail.com"> <img src="./assets/Icons/envelope-solid-24 (1) 1.svg" alt="Email Icon"></a>
+                <p>contato@charmeebela.com
+                </p>
+            </div>
+
+    </div>
+    <div class="contact-img">
+        <img src="./assets/Imagens/header_photos.svg" alt="">
+    </div>
+</div>
+</section>
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.1413760933606!2d-46.48144765966361!3d-23.491416759115342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6152df019649%3A0x52e112a4db458f84!2sEspa%C3%A7o%20Est%C3%A9tico%20Charme%20%26%20Bela!5e0!3m2!1spt-BR!2sbr!4v1716166658560!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+<footer>
+    <div class="footer">
+      
+
+    <div class="footer-logo">
+        <img src="./assets/logo.png" alt="Logo da ANFER" width="100" height="100">
+        <p>Charme & Bela</p>
+      </div>
+      
+      <div class="footer-contact">
+        <div class="item">
+            <a href="https://api.whatsapp.com/send?phone=5511913129669" target="_blank"><img src="./assets/Icons/whatsapp-logo-48 1.svg" alt="WhatssApp"></a>
+            <p>(11) 91312-9669</p>
+        </div>
+        <div class="item">
+            <a href="https://www.google.com/maps/place/ANFER+ESQUADRIAS+METALICAS/@-23.4867609,-46.4569006,19.86z/data=!4m6!3m5!1s0x94ce619fe14a2ab1:0x2c692349ce969a10!8m2!3d-23.4864845!4d-46.4566919!16s%2Fg%2F12qf9zbsc?entry=ttu" target="_blank"><img src="./assets/Icons/map-solid-24 1.svg" alt="Localization"></a>
+            <p>Av. Paranaguá, 1672 - Sala 02 
+                Ermelino Matarazzo, São Paulo -SP</p>
+        </div>
+        <div class="item">
+            <a href="mailto: contato@charmeebela.com"> <img src="./assets/Icons/envelope-solid-24 (1) 1.svg" alt="Email Icon"></a>
+            <p>contato@charmeebela.com
+            </p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/anfer.esquadrias/" target="_blank"><img src="./assets/Icons/logo-instagram.svg" alt="Instagram Icon"> </a>
+            <a href="https://www.facebook.com/Anfer.Esquadrias/" target="_blank"><img src="./assets/Icons/logo-facebook.svg" alt="Facebook Icon"></a>
+        </div>
+      </div>
+      
+
+    </div>
+  </footer>
+
+    <!--<p>@Copyright 2024 | ANFER Esquadrias Metálicas - Todos os direitos reservados.</p>--> 
+
+    <a  href="https://api.whatsapp.com/send?phone=5511913129669&text=%20Quero%20fazer%20uma%20avaliação!" 
+        class="btn-whatsapp"
+        target="_blank"
+        data-aos="zoom-in-up" data-aos-delay="400">
+    <img 
+        src="./assets/whatssapp.svg" 
+        alt="Botão do WhatssApp">
+    <span class="tooltip-text">Fale conosco</span>
+    </a>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

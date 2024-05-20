@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    outline: 0;}
+@import "partials/colors.scss"; // -> Funcionalidade do SASS. Permite usar as cores salvas de um arquivo separado de forma easy
+@import "partials/header"; 
+@import "partials/layout";// -> config do bg-background e hero 
+
+body{
+font-family: 'Sora', sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $primary-normal;   
+}
+
+button{
+    font-family: 'Sora',sans-serif;
+    cursor: pointer;
+}
+svg{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
