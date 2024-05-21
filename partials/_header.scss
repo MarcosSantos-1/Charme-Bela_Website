@@ -20,7 +20,7 @@ header{
    
     font-size: 1.5rem;
     font-weight: 600px;
-    margin-left: 80px;
+    margin-left: 120px;
     margin-right: 50px;
     position: absolute;
     left: 0;
@@ -33,7 +33,7 @@ header{
 }
 .navigation .logo{
     position: absolute;
-    margin-left: 10px;
+    margin-left: 50px;
     left: 0;
 }
 .navigation ul li a {
@@ -43,26 +43,16 @@ header{
     transition: all 0.5s;
 }
 .navigation ul li a:hover{
-    color: $red-dark;
+    color: #E9216D;
+    font-weight: bold;
 }
 .menu{
     cursor: pointer;
     display: none;
     float: right;
+    font-size: 35px;
 }
-.menu .bar{
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 3px;
-    background: $black-normal;
-    margin: 5px auto;
-    transition: all 0.3s;
-}
-.menu .bar:nth-child(1),
-.menu .bar:nth-child(3){
-    background: $red-light;
-}
+
 .header-icons a:hover{
    i{
     animation: translateY 0.8s infinite alternate;

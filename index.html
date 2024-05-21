@@ -70,9 +70,7 @@
                             </a>
                     </div>
                     <div class="menu" id="menuButton" onclick="myMenuFunction()">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+                        <i class='bx bx-menu'></i>
                      </div>
                 </nav>
             <main class="hero container">
@@ -112,7 +110,7 @@
             <p>Descubra o alívio e o bem-estar com nossas massagens terapeuticas. Relaxe e renove-se em um ambiente acolhedor, cuidando do corpo e do bem-estar. Agende sua sessão e sinta a diferença.
             </p>
             <div class="butao">
-            <button>Agende uma avaliação</button>
+                <a href="https://api.whatsapp.com/send?phone=5511913129669&text=Venho%20do%20site%20e%20quero%20saber%20sobre%20Massagens!" target="_blank"> <button>Agende uma avaliação</button></a>
             </div>
         </div>
         </div>
@@ -124,7 +122,7 @@
             <h3>Redução de Medidas</h3>
             <p>Reduza medidas e alcance sua melhor versão  Utilizando técnicas avançadas e seguras, ajudamos você a conquistar resultados visíveis e duradouros. Agende sua sessão e sinta-se mais confiante e saudável.</p>
             <div class="butao">
-                <button>Agende uma avaliação</button>
+                <a href="https://api.whatsapp.com/send?phone=5511913129669&text=Venho%20do%20Site%20e%20quero%20saber%20sobre%20Redu%C3%A7%C3%A3o%20de%20medidas" target="_blank"> <button>Agende uma avaliação</button></a>
                 </div>        
             </div>
         </div>
@@ -137,7 +135,7 @@
             <p>Revitalize sua pele. Utilizamos técnicas avançadas e produtos de alta qualidade, proporcionamos uma limpeza profunda e rejuvenescimento visível. Agende sua sessão e descubra uma pele mais luminosa e saudável.
             </p>
             <div class="butao">
-                <button>Agende uma avaliação</button>
+                <a href="https://api.whatsapp.com/send?phone=5511913129669&text=Venho%20do%20Site%20e%20quero%20saber%20sobre%20Tratamentos%20faciais" target="_blank"> <button>Agende uma avaliação</button></a>
             </div>
         </div>
         </div>
@@ -150,7 +148,7 @@
             <p>Explore nosso tratamento de Levantamento de Bumbum na clínica, com o uso de equipamentos como o pump up seguido por massagem modeladora. Obtenha um bumbum mais firme e tonificado em poucas sessões. 
             </p>
             <div class="butao">
-                <button>Agende uma avaliação</button>
+                <a href="https://api.whatsapp.com/send?phone=5511913129669&text=%20Quero%20fazer%20uma%20avaliação!" target="_blank"> <button>Agende uma avaliação</button></a>
             </div>        
         </div>
         </div>
@@ -163,7 +161,7 @@
             <p>Descubra os benefícios dos nossos tratamentos injetáveis faciais e corporais na clínica. Com procedimentos seguros e eficazes, ajudamos a rejuvenescer a pele e a modelar o corpo de forma natural e duradoura. 
             </p>
             <div class="butao">
-                <button>Agende uma avaliação</button>
+                <a href="https://api.whatsapp.com/send?phone=5511913129669&text=Venho%20do%20Site%20e%20quero%20saber%20sobre%20Tratamentos%20Injet%C3%A1veis" target="_blank"> <button>Agende uma avaliação</button></a>
             </div>        
         </div>
         </div>
@@ -175,7 +173,7 @@
             <h3>Depilações</h3>
             <p>Descubra nossa depilação a cera e a laser na clínica. Oferecemos métodos eficazes para uma pele suave e livre de pelos. Marque sua sessão e sinta-se confiante todos os dias!</p>
             <div class="butao">
-                <button>Agende uma avaliação</button>
+                <a href="https://api.whatsapp.com/send?phone=5511913129669&text=Venho%20do%20Site%20e%20quero%20saber%20sobre%20Depila%C3%A7%C3%B5es" target="_blank""> <button>Agende uma avaliação</button></a>
             </div>
         </div>
         </div>
@@ -250,17 +248,22 @@
     <h2>Galeria de imagens</h2>
 
     <div class="galery-container">
-        <img src="./assets/grid/1.jpeg" alt="">
-        <img src="./assets/grid/2.jpeg" alt="">
-        <img src="./assets/grid/3.jpeg" alt="">
-        <img src="./assets/grid/4.jpeg" alt="">
-        <img src="./assets/grid/5.jpeg" alt="">
-        <img src="./assets/grid/6.jpeg" alt="">
-        <img src="./assets/grid/7.jpeg" alt="">
-        <img src="./assets/grid/8.jpeg" alt="">
-        <img src="./assets/grid/9.jpeg" alt="">
+        <img src="./assets/grid/1.jpeg" alt="" class="grid-item">
+        <img src="./assets/grid/2.jpeg" alt="" class="grid-item">
+        <img src="./assets/grid/3.jpeg" alt="" class="grid-item">
+        <img src="./assets/grid/4.jpeg" alt="" class="grid-item">
+        <img src="./assets/grid/5.jpeg" alt="" class="grid-item">
+        <img src="./assets/grid/6.jpeg" alt="" class="grid-item">
+        <img src="./assets/grid/7.jpeg" alt="" class="grid-item">
+        <img src="./assets/grid/8.jpeg" alt="" class="grid-item">
+        <img src="./assets/grid/9.jpeg" alt="" class="grid-item">
     </div>
-
+    <div id="viewer" class="viewer">
+        <span class="close">&times;</span>
+        <span class="nav prev">&#10094;</span>
+        <img class="viewer-content" id="viewer-img">
+        <span class="nav next">&#10095;</span>
+    </div>
 </section>
 
 
@@ -270,21 +273,22 @@
         <h2>Contato!</h2>
         <div class="item">
             <div class="icon">
-                <a href="https://www.google.com/maps/place/Espa%C3%A7o+Est%C3%A9tico+Charme+%26+Bela/@-23.4914168,-46.481453,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce6152df019649:0x52e112a4db458f84!8m2!3d-23.4914217!4d-46.4788781!16s%2Fg%2F11vzs4g3j4?entry=ttu" target="_blank"><i class='bx bx-location-plus' style='color:#fbfbfb'  ></i></a>
+                <a href="https://www.google.com/maps/place/Espa%C3%A7o+Est%C3%A9tico+Charme+%26+Bela/@-23.4914168,-46.481453,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce6152df019649:0x52e112a4db458f84!8m2!3d-23.4914217!4d-46.4788781!16s%2Fg%2F11vzs4g3j4?entry=ttu" target="_blank"><i class='bx bx-location-plus' style='color:#fbfbfb' ></i></a>
             </div>
             <p>Av. Paranaguá, 1672 - Sala 02 <br>
                 Ermelino Matarazzo, São Paulo -SP</p>
         </div>
             <div class="item">
                 <div class="icon">
-                    <a href="https://api.whatsapp.com/send?phone=5511913129669" target="_blank"><i class='bx bxs-phone' style='color:#fbfbfb'></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511913129669" target="_blank">
+                    <i class='bx bxs-phone' style='color:#fbfbfb'></i></a>
                 </div>
                 <p>(11) 91312-9669</p>
             </div>
-
             <div class="item">
                 <div class="icon">
-                    <a href="mailto: contato@charmeebela.com"> <i class='bx bxs-envelope' style='color:#fbfbfb' ></i></a>
+                    <a href="mailto: contato@charmeebela.com"> 
+                    <i class='bx bxs-envelope' style='color:#fbfbfb' ></i></a>
                 </div>         
                 <p>contato@charmeebela.com
                 </p>
@@ -307,9 +311,23 @@
             </div>
 
     </div>
-    <div class="contact-img">
-        <img src="./assets/Imagens/header_photos.svg" alt="">
-    </div>
+        <div class="contact-form">
+            <form action="https://formsubmit.co/marcotas203@gmail.com" method="POST">
+                    <div class="form-inputs">
+                        <input type="text" name="name" class="input-field" placeholder="Nome" required>
+                        <input type="email" name="email" class="input-field" placeholder="E-Mail"  required>
+                    </div>
+                    <div class="text-area">
+                        <textarea name="message" placeholder="Mensagem" required></textarea>
+                    </div>
+                    <div class="form-buttom">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://anfer-website.vercel.app/obrigado.html">
+                        <button type="submit" class="btn">Enviar <i class='bx bxs-send'  onclick="sended()"></i></button>
+                    </div>
+                     
+           </form>
+        </div>    
 </div>
 </section>
 
@@ -324,26 +342,27 @@
 
 
 <footer>
-    <div class="footer">
-      
-
-    <div class="footer-logo">
-        <img src="./assets/logo.png" alt="Logo da ANFER" width="100" height="100">
-        <p>Charme & Bela</p>
-      </div>
-      
-      <div class="footer-contact">
+<div class="footer">
+       
+    <div class="footer-contact">
+        <div class="footer-logo">
+            <img src="./assets/logo.png" alt="Logo da Charme & Bela" width="100" height="100">
+            <p>Charme & Bela</p>
+          </div>    
         <div class="item">
-            <a href="https://api.whatsapp.com/send?phone=5511913129669" target="_blank"><img src="./assets/Icons/whatsapp-logo-48 1.svg" alt="WhatssApp"></a>
+            <a href="https://api.whatsapp.com/send?phone=5511913129669" target="_blank">
+                <i class='bx bxl-whatsapp' style='color:#fbfbfb'></i> </a>
             <p>(11) 91312-9669</p>
         </div>
         <div class="item">
-            <a href="https://www.google.com/maps/place/ANFER+ESQUADRIAS+METALICAS/@-23.4867609,-46.4569006,19.86z/data=!4m6!3m5!1s0x94ce619fe14a2ab1:0x2c692349ce969a10!8m2!3d-23.4864845!4d-46.4566919!16s%2Fg%2F12qf9zbsc?entry=ttu" target="_blank"><img src="./assets/Icons/map-solid-24 1.svg" alt="Localization"></a>
-            <p>Av. Paranaguá, 1672 - Sala 02 
-                Ermelino Matarazzo, São Paulo -SP</p>
+            <a href="https://www.google.com/maps/place/ANFER+ESQUADRIAS+METALICAS/@-23.4867609,-46.4569006,19.86z/data=!4m6!3m5!1s0x94ce619fe14a2ab1:0x2c692349ce969a10!8m2!3d-23.4864845!4d-46.4566919!16s%2Fg%2F12qf9zbsc?entry=ttu" target="_blank">
+                <i class='bx bx-location-plus' style='color:#fbfbfb'></i></a>
+            <p>Av. Paranaguá, 1672 - Sala 02 -
+                Ermelino Matarazzo </p>
         </div>
         <div class="item">
-            <a href="mailto: contato@charmeebela.com"> <img src="./assets/Icons/envelope-solid-24 (1) 1.svg" alt="Email Icon"></a>
+            <a href="mailto: contato@charmeebela.com"> 
+                <i class='bx bxs-envelope' style='color:#fbfbfb' ></i></a>
             <p>contato@charmeebela.com
             </p>
         </div>
@@ -363,10 +382,30 @@
             </div>
 
         </div>
-      </div>
+    </div>
+    <div class="footer-menu">
+        <h2>Links Rápidos</h2>
+        <ul>
+            <li class="nav-item" ><a href="#home">Início</a></li>
+            <li class="nav-item" ><a href="#about">Sobre</a></li>  
+            <li class="nav-item" ><a href="#care">Tratamentos</a></li>  
+            <li class="nav-item" ><a href="#contact">Contato</a></li>  
+        </ul>
+    </div>
+
+    <div class="footer-newsletter">
+        <form>
+            <label> NEWSLETTER</label>
+            <label class="p"> Inscreva-se para receber novidades e promoções por e-mail</label>
+            <input type="text" name="name" placeholder="Nome">
+            <input type="email" name="email" placeholder="E-mail">
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </div>
+
+</div>
       
 
-    </div>
   </footer>
 
     <!--<p>@Copyright 2024 | ANFER Esquadrias Metálicas - Todos os direitos reservados.</p>--> 
