@@ -99,6 +99,7 @@
 
   //---------- --> GRID DOS SERVIÇOS: <-- -------------//
 .wrapper{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,12 +112,14 @@
     grid-template-rows: repeat(2, 1fr);    
     gap: 25px;
     margin-bottom: 30px;
+    max-width: 1300px;
+
 }
 .servico{
   flex: 1;
   padding: 0;
     display: flex;
-    width: 430px;
+    max-width: 430px;
     height: 500px;
     flex-direction: column;
     margin-bottom: 50px;
@@ -213,7 +216,7 @@
   grid-template-rows: repeat(1, 1fr);    
   gap: 25px;
   margin-bottom: 30px;
-  max-width: 1340px;
+  max-width: 1300px;
 }
 
 
@@ -737,8 +740,6 @@ footer {
   cursor: pointer;
 }
 
-
-
   //---------- --> BOTAO FLUTUANTE DO WHATSAPP: <-- -------------//
 
   .btn-whatsapp{
@@ -783,6 +784,129 @@ footer {
 
 //---------- --> RESPONSIVIDADE: <-- -------------//
 
+@media screen and (max-width: 1600px)
+{  
+  .servicos
+  {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);    
+    }
+  .servico{
+ 
+    gap: 25px;
+    margin-bottom: 30px;
+    height: 500px;
+    max-width: 400px;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .servicos
+  {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);    
+    }
+  .servico{
+ 
+    gap: 25px;
+    margin-bottom: 30px;
+    height: 500px;
+    max-width: 400px;
+    img{
+      width: 100%;
+    }
+  }
+  .care-container{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);    
+    gap: 25px;
+    margin-bottom: 30px;
+    max-width: 400px;
+  }
+  .galery-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);  
+    background-color: #000000;
+  }
+  .grid-item{
+    display: none;
+    margin: 0 auto;
+  }
+  .grid-item:first-child {
+    display: block;
+}
+.contact-container{
+  display: flex;
+
+  flex-direction: column;
+}
+.contact-form {
+  display: flex;
+  width: 100%;
+}
+form, .form-inputs , .text-area{
+  width: 100%;
+  padding: 0 30px;
+}
+.text-area{
+  height: 100px;
+}
+textarea{
+  height: 100px;
+}
+.contact{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-content{
+  width: 100%;
+padding: 0px 10%;}
+.contact-content .item {
+  margin: 15px 0px;
+  font-size: 13px;
+  gap: 10px;
+}
+.contact-content .item p {
+  margin: 0px 0;
+  font-size: 13px;
+}
+
+.item .icon  {
+
+  width: 40px;
+  height: 40px;
+  background-color: #E9216D;
+  border-radius: 35px;
+  box-shadow: 3px -1px 17px -4px rgba(49, 47, 47, 0.9);
+}
+
+.item .icon i {
+font-size: 18px;
+}
+
+
+}
+
   @media (max-width: 768px) {
     .footer {
       flex-direction: column;
@@ -798,28 +922,14 @@ footer {
     }
   }
 
-@media screen and (max-width: 1080px){
-   
-}
+
 
 @media screen and (max-width: 900px){
   
 }
 
 @media screen and (max-width: 768px){
-    .servicos{
-        grid-template-columns: repeat(1, 1fr);
-    }
 
-    .servico{
-      margin-bottom: 5px;
-  }
-    .about-content{
-        flex-direction: column;
-    }
-    .form-inputs{
-      width: 100%;
-    }
 }
 
 @media screen and (max-width: 400px) {

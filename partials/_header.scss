@@ -53,21 +53,7 @@ header{
     font-size: 35px;
 }
 
-.header-icons a:hover{
-   i{
-    animation: translateY 0.8s infinite alternate;
-    color: $red-light;
-}
-}
 
-@keyframes translateY{
-    from{
-        transform: translateY(0px) scale(1);
-    }
-    to{
-        transform: translateY(-8px) scale(1.1);
-    }
-}
 .header-button{
     display: flex;
     align-items: center;
@@ -75,12 +61,11 @@ header{
     padding: 8px 24px;
     border-radius: 8px;
     color: $white-normal;
-    background-color: #00A884;
+    background-color: #E9216D;
     transition: background-color 0.8s;
 }
 .header-button:hover{
-    border: 1px solid $red-dark;
-    background-color: #0C8B70;
+    background-color: #fb3985;
 }
 .header-button img {
     width: 25px;
