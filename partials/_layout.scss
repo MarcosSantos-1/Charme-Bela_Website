@@ -1,25 +1,24 @@
+body {
+  overflow-x: hidden;
+}
 .container{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
 }
-.bg-home{
-    position: relative;
-}
-.bg-home::before{
-    content: '';
-    display: block;
-    position:absolute;
-    background-image: url("./assets/images/Header.png");
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: cover;
-    background-repeat:no-repeat ;
-    background-position: 50% 0;
-    opacity: 0.9;
+
+.bg-home::before {
+  content: ""; /* Conteúdo vazio para o pseudo-elemento */
+  position: absolute; /* Posicionamento absoluto para sobrepor a div */
+  top: 50px;
+  left: 0;
+  width: 100%; /* Cobrir toda a largura da div */
+  height: 100%; /* Cobrir toda a altura da div */
+  background: url("./assets/imagens/Header.svg"); /* Aplicar a imagem de fundo */
+  background-size: cover;
+  background-position: right center; /* Mostrar a metade direita */
+  opacity: 1; /* Aplicar opacidade apenas ao fundo */
+  z-index: -9;
 }
 
 .hero{
@@ -34,12 +33,15 @@
         line-height: 120%;
         max-width: 1240px;
         font-size: 46px;
-          margin: 14px 30px;
+        margin: 14px 30px;
+        max-width: 500px;
+
 
     }
     p{
       margin: 14px 30px;
       line-height: 250%;
+      max-width: 500px;
     }
 }
 
@@ -54,9 +56,7 @@
     margin: 10px 30px;
     border-radius: 8px;
 }
-.button-contact:hover{
-    animation: scaleButton 0.8s alternate infinite;
-}
+
 
 
   //---------- --> SOBRE: <-- -------------//
@@ -120,7 +120,7 @@
   padding: 0;
     display: flex;
     max-width: 430px;
-    height: 500px;
+    height: 550px;
     flex-direction: column;
     margin-bottom: 50px;
     background-color: $white-normal;
@@ -159,6 +159,7 @@
   display: flex;
   align-items: end;
   justify-content: start;
+  height: 100%;
 }
 
 .servico-info button{
@@ -214,7 +215,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);    
-  gap: 25px;
+  gap: 35px;
   margin-bottom: 30px;
   max-width: 1300px;
 }
@@ -229,6 +230,12 @@
   font-size: 19px;
 }
 
+.care-content img{
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgba(0,0,0,0.45);
+  overflow: hidden; //vai esconder os cantos arredondando as bordas de tudo o que passar da imagem
+
+}
 
 .care-content li::before {
   content: "\f00c";  /* Unicode for Font Awesome check icon */
@@ -786,6 +793,21 @@ footer {
 
 @media screen and (max-width: 1600px)
 {  
+  .hero{
+    h1{
+      line-height: 120%;
+      max-width: 1240px;
+      font-size: 46px;
+      margin: 14px 30px;
+      max-width: 500px;
+
+
+  }
+  p{
+    margin: 14px 30px;
+    line-height: 250%;
+  }
+  }
   .servicos
   {
     display: flex;
@@ -798,19 +820,59 @@ footer {
     }
   .servico{
  
-    gap: 25px;
+    gap: 5px;
     margin-bottom: 30px;
-    height: 500px;
+    height: 560px;
     max-width: 400px;
     img{
       width: 100%;
-    }
+      height: 300px;
+      max-width: 500px;
+      transition: 0.2s;    }
+  }
+  .care-content{
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 1100px){
+  .bg-home::before {
+    content: ""; /* Conteúdo vazio para o pseudo-elemento */
+    position: absolute; /* Posicionamento absoluto para sobrepor a div */
+    top: 50px;
+    left: 0;
+    width: 100%; /* Cobrir toda a largura da div */
+    height: 100%; /* Cobrir toda a altura da div */
+    background: url("./assets/imagens/Header.svg"); /* Aplicar a imagem de fundo */
+    background-size: cover;
+    background-position: right center; /* Mostrar a metade direita */
+    opacity: 0.7; /* Aplicar opacidade apenas ao fundo */
+    z-index: -9;
   }
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 980px){
+    
+  .bg-home::before {
+    content: ""; /* Conteúdo vazio para o pseudo-elemento */
+    position: absolute; /* Posicionamento absoluto para sobrepor a div */
+    top: 50px;
+    left: 0;
+    width: 100%; /* Cobrir toda a largura da div */
+    height: 100%; /* Cobrir toda a altura da div */
+    background: url("./assets/imagens/Header.svg"); /* Aplicar a imagem de fundo */
+    background-size: cover;
+    background-position: right center; /* Mostrar a metade direita */
+    opacity: 0.3; /* Aplicar opacidade apenas ao fundo */
+    z-index: -9;
+  }
+  .about-description h2{
+    font-size: 28px;
+  }
   .servicos
   {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     display: grid;
@@ -820,25 +882,54 @@ footer {
     grid-template-rows: repeat(1, 1fr);    
     }
   .servico{
- 
-    gap: 25px;
+    gap: 10px;
     margin-bottom: 30px;
-    height: 500px;
+    height: 560px;
     max-width: 400px;
     img{
       width: 100%;
-    }
+      height: 300px;
+      max-width: 500px;    }
   }
-  .care-container{
+  .care-wrapper{
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);    
-    gap: 25px;
     margin-bottom: 30px;
-    max-width: 400px;
+    width: 100%;
+
   }
+  .care-content{
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+  }
+
+  .care-content li{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+  }
+  .care-content img{
+    display: none;
+  }
+
+  .care-content ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .care-container{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+  }
+
   .galery-container{
     display: grid;
     width: 100%;
@@ -908,6 +999,9 @@ font-size: 18px;
 }
 
   @media (max-width: 768px) {
+
+
+ 
     .footer {
       flex-direction: column;
     }
@@ -922,20 +1016,21 @@ font-size: 18px;
     }
   }
 
+@media screen and (max-width: 500px) {
 
-
-@media screen and (max-width: 900px){
-  
-}
-
-@media screen and (max-width: 768px){
-
-}
-
-@media screen and (max-width: 400px) {
+  .button-contact{
+    margin: 0 auto;
+  }
     .hero h1{
-        font-size: 24px;
+        font-size: 25px;
+        color: #E9216D;
     }
+    .hero p{
+      font-size: 18px;
+      line-height: 150%;
+      font-weight: 600;
+      margin-bottom: 50px;
+  }
 }
 
 
