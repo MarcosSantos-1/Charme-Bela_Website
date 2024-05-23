@@ -178,7 +178,7 @@ body {
   left: 0;
   width: 100%; /* Cobrir toda a largura da div */
   height: 100%; /* Cobrir toda a altura da div */
-  background: url("./assets/imagens/header.png"); /* Aplicar a imagem de fundo */
+  background-image: url("./assets/imagens/MainBanner.svg");
   left: 0;
   top: 0;
   background-size: cover;
