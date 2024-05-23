@@ -25,11 +25,22 @@ header {
 }
 
 .navigation .nome-logo {
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
-  margin-left: 120px;
-  margin-right: 50px;
+  margin-left: 110px;
   position: absolute;
+  left: 0;
+}
+
+.navigation .logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 50px;
+  width: 55px;
+  height: 55px;
   left: 0;
 }
 
@@ -37,12 +48,6 @@ header {
   display: flex;
   align-items: center;
   gap: 2em;
-}
-
-.navigation .logo {
-  position: absolute;
-  margin-left: 50px;
-  left: 0;
 }
 
 .navigation ul li a {
@@ -89,8 +94,8 @@ header {
 
 @media screen and (max-width: 1000px) {
   .navigation {
-    position: relative;
-    top: 0; /* Posicioná-la na parte superior */
+    display: flex;
+    align-items: center;
     width: 100%; /* Ocupar toda a largura da tela */
     z-index: 100;
   }
@@ -128,30 +133,16 @@ header {
   .header-button {
     display: none;
   }
-  .navigation .logo {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-    left: 0;
-  }
 }
 @media screen and (max-width: 768px) {
   .header-button {
     display: none;
   }
   .navigation .logo {
-    position: absolute;
     display: flex;
-    margin-top: 20px;
     align-items: center;
-    margin-left: 20px;
-    left: 0;
-  }
-  .navigation .nome-logo {
-    margin-left: 95px;
-    font-size: 20px;
-    font-weight: bold;
+    position: absolute;
+    margin-top: 20px;
   }
 }
 body {
