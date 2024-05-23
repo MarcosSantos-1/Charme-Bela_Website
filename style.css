@@ -162,10 +162,13 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px;
+  overflow-x: hidden;
 }
 
 .bg-home {
   position: relative;
+  overflow-x: hidden;
+  background: none; /* Remover o fundo da div principal */
 }
 
 .bg-home::before {
